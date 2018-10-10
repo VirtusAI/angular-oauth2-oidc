@@ -1497,7 +1497,7 @@ export class OAuthService extends AuthConfig {
             return Promise.reject(err);
         }
 
-        if (claims.iss !== this.issuer) {
+        if (!this.skipIssuerCheck && claims.iss !== this.issuer) {
             const err = 'Wrong issuer: ' + claims.iss;
             this.logger.warn(err);
             return Promise.reject(err);
