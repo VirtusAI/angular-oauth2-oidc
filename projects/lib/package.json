@@ -4,10 +4,10 @@
   "author": {
     "name": "Manfred Steyer"
   },
-  "version": "4.0.4-rc.1",
+  "version": "5.0.0",
   "repository": "virtusai/angular-oauth2-oidc",
   "peerDependencies": {
-    "@angular/common": "^6.0.0",
-    "@angular/core": "^6.0.0"
+    "@angular/common": ">=6.0.0 < 8.0.0",
+    "@angular/core": ">=6.0.0 < 8.0.0"
   }
 }
